@@ -11,17 +11,19 @@ package prueva2;
  */
 public class Alumno{
     
-    double promedio;
-    String nombre;
-    int codigo;
-    
+    private double promedio;
+    private String nombre;
+    private int codigo;
+
+    public Alumno() {
+    }
     
     public Alumno(String name, double p,int c){
     
     promedio=p;
     nombre=name;
     codigo=c;
-} 
+    } 
 
     public int getCodigo() {
         return codigo;
@@ -30,10 +32,6 @@ public class Alumno{
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
-
-
-
-
 
     public double getPromedio() {
         return promedio;
@@ -49,11 +47,6 @@ public class Alumno{
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    
-
-    
-    
+    }   
     
 }
